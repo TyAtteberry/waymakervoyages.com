@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{partial "head.html" .}}
+
+  <body class="index-page">
+    {{partial "header.html" .}}
+
+    <main class="main">{{block "main" .}}{{end}}</main>
+
+    {{ partial "footer.html" . }}
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    {{partial "script.html"}}
+  </body>
+</html>
