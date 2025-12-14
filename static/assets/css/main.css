@@ -5032,9 +5032,137 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+/* --- Google Fonts (Optional: Add to your HTML <head> if not already there) --- */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;700&display=swap'); */
+
+:root {
+  --primary-color: #000000; /* Dark text for high contrast */
+  --secondary-color: #666666; /* Gray for text */
+  --border-color: #e0e0e0; /* Light gray for underlines */
+  --font-serif: "Playfair Display", serif; /* For Headings */
+  --font-sans: "Lato", sans-serif; /* For Inputs/Body */
+}
+
+/* --- Layout Container --- */
+.contact-form-container {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+/* --- Section Headings --- */
+.form-intro {
+  margin-bottom: 50px;
+}
+
+.form-intro h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.form-intro p {
+  font-family: var(--font-sans);
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* --- Form Fields (The "Underline" Look) --- */
+.form-field {
+  position: relative;
+  margin-bottom: 35px; /* Spacing between rows */
+}
+
+/* The Input Styling */
+.form-input {
+  width: 100%;
+  padding: 10px 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--primary-color);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  outline: none;
+  transition: border-color 0.3s ease;
+  border-radius: 0; /* Removes default radius */
+}
+
+/* Focus State: Darker underline */
+.form-input:focus {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* Textarea specific */
+textarea.form-input {
+  resize: vertical; /* Allow resizing only vertically */
+  min-height: 30px;
+  color: var(--secondary-color);
+}
+
+/* Select Input Specifics */
+select.form-input {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+/* --- The Floating Labels --- */
+.field-label {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  pointer-events: none; /* Allows click to pass through to input */
+  transition: 0.3s ease all;
+}
+
+/* --- Submit Button --- */
+.send-button {
+  background: transparent;
+  border: 1px solid var(--primary-color); /* Or remove border for text-only link style */
+  color: var(--primary-color);
+  padding: 12px 30px;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.send-button:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.button-arrow {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* --- Form Feedback Messages --- */
+.loading,
+.error-message,
+.sent-message {
+  display: none;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  background: #fff;
+  text-align: center;
 }

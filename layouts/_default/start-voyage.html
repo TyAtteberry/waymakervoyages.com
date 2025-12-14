@@ -1,0 +1,160 @@
+{{define "main"}}
+<section id="start-voyage" class="start-voyage section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Start Your Voyage</h2>
+    <p>Tell us about your dream sailing adventure</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-form-container">
+          <div class="form-intro">
+            <h2>Plan Your Perfect Getaway</h2>
+            <p>
+              Fill out the form below and our travel specialists will contact
+              you to customize your ideal sailing experience in the British
+              Virgin Islands.
+            </p>
+          </div>
+
+          <form
+            action="/forms/voyage-planner.php"
+            method="post"
+            class="php-email-form contact-form"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-input"
+                    id="voyageName"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    id="voyageEmail"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="date"
+                    class="form-input"
+                    name="preferred_date"
+                    id="voyageDate"
+                    required
+                  />
+                  <label for="voyageDate" class="field-label"
+                    >Preferred Date</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <select
+                    class="form-input"
+                    name="number_of_people"
+                    id="voyagePeople"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select Number of People
+                    </option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7+">7+ People</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <select
+                class="form-input"
+                name="trip_type"
+                id="voyageType"
+                required
+              >
+                <option value="" disabled selected>Select Trip Type</option>
+                <option value="family">Family Vacation</option>
+                <option value="father-son">Father & Son</option>
+                <option value="mother-daughter">Mother & Daughter</option>
+                <option value="business">Business Retreat</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <textarea
+                class="form-input message-input"
+                name="purpose"
+                id="voyagePurpose"
+                rows="3"
+                placeholder="What is the main purpose of your trip? (e.g., relaxation, adventure, team building, bonding time, etc.)"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <textarea
+                class="form-input message-input"
+                name="goals"
+                id="voyageGoals"
+                rows="3"
+                placeholder="What are your goals for this voyage? (e.g., specific activities, experiences you want, outcomes you hope to achieve)"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <textarea
+                class="form-input message-input"
+                name="additional_info"
+                id="voyageAdditional"
+                rows="2"
+                placeholder="Any additional information or special requests"
+              ></textarea>
+            </div>
+
+            <div class="my-3">
+              <div class="loading">Processing your request</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Thank you! We've received your voyage request and will contact
+                you soon to plan your perfect sailing adventure.
+              </div>
+            </div>
+
+            <button type="submit" class="send-button">
+              Submit Voyage Request
+              <span class="button-arrow">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
