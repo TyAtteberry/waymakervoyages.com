@@ -1,6 +1,4 @@
 ---
-title: Start Your Voyage
-layout: start-voyage
+title: Start Voyag
+layout: start-voyag
 ---
-
-Plan your perfect sailing adventure with WayMaker Voyages.
