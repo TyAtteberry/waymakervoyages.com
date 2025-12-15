@@ -2,14 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about-us/</loc>
+    <loc>http://localhost:64463/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:64463/about-us/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:64463/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/start-voyage/</loc>
+    <loc>http://localhost:64463/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:64463/start-voyage/</loc>
+  </url><url>
+    <loc>http://localhost:64463/tags/</loc>
   </url>
 </urlset>

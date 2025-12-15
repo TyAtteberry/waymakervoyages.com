@@ -2,23 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Way Maker Voyages</title>
-    <link>http://localhost:58113/</link>
+    <link>http://localhost:64463/</link>
     <description>Recent content in Home on Way Maker Voyages</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:58113/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64463/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:64463/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64463/about/</guid>
+      <description></description>
+    </item>
     <item>
       <title>about</title>
-      <link>http://localhost:58113/about-us/</link>
+      <link>http://localhost:64463/about-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58113/about-us/</guid>
+      <guid>http://localhost:64463/about-us/</guid>
       <description></description>
     </item>
     <item>
       <title>Start Voyag</title>
-      <link>http://localhost:58113/start-voyage/</link>
+      <link>http://localhost:64463/start-voyage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58113/start-voyage/</guid>
+      <guid>http://localhost:64463/start-voyage/</guid>
       <description></description>
     </item>
   </channel>
