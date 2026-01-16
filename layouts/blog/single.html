@@ -1,0 +1,131 @@
+{{define "main"}}
+<style>
+  .post-content h1, .post-content h2, .post-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .post-content h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+  .post-content h2 {
+    font-size: 1.875rem;
+    line-height: 1.3;
+  }
+  .post-content h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  .post-content img {
+    margin: 1.5rem 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .post-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+  .post-content ul, .post-content ol {
+    margin-bottom: 1.5rem;
+  }
+</style>
+
+<section id="blog-single" class="blog-single section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <article class="blog-post">
+          <div class="post-header text-center mb-5">
+            <div class="post-meta mb-3">
+              <ul class="post-meta-list d-flex align-items-center justify-content-center">
+                <li class="post-author d-flex align-items-center me-4">
+                  <i class="bi bi-person text-muted me-2"></i>
+                  <a href="/blog/?author={{ .Params.author | default "admin" | urlize }}" class="text-muted text-decoration-none hover-effect">{{ .Params.author | default "Admin" }}</a>
+                </li>
+                <li class="post-date d-flex align-items-center me-4">
+                  <i class="bi bi-calendar3 text-muted me-2"></i>
+                  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="text-muted">
+                    {{ .Date.Format "January 2, 2006" }}
+                  </time>
+                </li>
+                <li class="post-category d-flex align-items-center">
+                  <i class="bi bi-folder text-muted me-2"></i>
+                  <a href="/blog/?category={{ .Params.category | default "uncategorized" | urlize }}" class="text-muted text-decoration-none hover-effect">{{ .Params.category | default "Uncategorized" }}</a>
+                </li>
+              </ul>
+            </div>
+            <h1 class="post-title display-4 mb-4">{{ .Title }}</h1>
+            {{ if .Params.image }}
+            <div class="post-thumbnail mb-4">
+              <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid rounded shadow-sm" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+            </div>
+            {{ end }}
+          </div>
+          
+          <div class="post-content mb-5">
+            {{ .Content }}
+          </div>
+          
+          <div class="post-tags mb-4">
+            {{ if .Params.tags }}
+            <div class="tags d-flex flex-wrap justify-content-center gap-2">
+              <i class="bi bi-tags text-muted me-2 align-self-center"></i>
+              {{ range .Params.tags }}
+              <a href="/blog/?tag={{ . | urlize }}" class="tag badge bg-light text-dark border border-secondary px-3 py-2 text-decoration-none hover-effect">#{{ . }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          
+          <div class="post-share-section bg-light p-4 rounded-3 mb-5">
+            <h5 class="text-center mb-4">Share this article</h5>
+            <div class="social-links d-flex justify-content-center gap-4">
+              <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" class="share-btn twitter d-flex flex-column align-items-center text-decoration-none" target="_blank">
+                <i class="bi bi-twitter-x text-dark fs-4 mb-2"></i>
+                <span class="text-muted small">Twitter</span>
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" class="share-btn facebook d-flex flex-column align-items-center text-decoration-none" target="_blank">
+                <i class="bi bi-facebook text-dark fs-4 mb-2"></i>
+                <span class="text-muted small">Facebook</span>
+              </a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" class="share-btn linkedin d-flex flex-column align-items-center text-decoration-none" target="_blank">
+                <i class="bi bi-linkedin text-dark fs-4 mb-2"></i>
+                <span class="text-muted small">LinkedIn</span>
+              </a>
+              <a href="mailto:?subject={{ .Title }}&body=Check out this article: {{ .Permalink }}" class="share-btn email d-flex flex-column align-items-center text-decoration-none">
+                <i class="bi bi-envelope text-dark fs-4 mb-2"></i>
+                <span class="text-muted small">Email</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <nav class="blog-pagination mt-5">
+          <div class="nav-links d-flex justify-content-between">
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.RelPermalink }}" class="prev-post d-flex align-items-center text-decoration-none text-dark p-3 border rounded">
+              <i class="bi bi-chevron-left me-2"></i>
+              <div>
+                <small class="text-muted">Previous Post</small>
+                <div>{{ .PrevInSection.Title }}</div>
+              </div>
+            </a>
+            {{ end }}
+            
+            {{ if .NextInSection }}
+            <a href="{{ .NextInSection.RelPermalink }}" class="next-post d-flex align-items-center text-decoration-none text-dark p-3 border rounded ms-auto">
+              <div class="text-end">
+                <small class="text-muted">Next Post</small>
+                <div>{{ .NextInSection.Title }}</div>
+              </div>
+              <i class="bi bi-chevron-right ms-2"></i>
+            </a>
+            {{ end }}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

@@ -2,10 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Way Maker Voyages</title>
-    <link>http://localhost:64463/tags/</link>
+    <link>https://waymakervoyages.com/tags/</link>
     <description>Recent content in Tags on Way Maker Voyages</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:64463/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 10:00:00 +0530</lastBuildDate>
+    <atom:link href="https://waymakervoyages.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adventure</title>
+      <link>https://waymakervoyages.com/tags/adventure/</link>
+      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
+      <guid>https://waymakervoyages.com/tags/adventure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BVI</title>
+      <link>https://waymakervoyages.com/tags/bvi/</link>
+      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
+      <guid>https://waymakervoyages.com/tags/bvi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sailing</title>
+      <link>https://waymakervoyages.com/tags/sailing/</link>
+      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
+      <guid>https://waymakervoyages.com/tags/sailing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel Tips</title>
+      <link>https://waymakervoyages.com/tags/travel-tips/</link>
+      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
+      <guid>https://waymakervoyages.com/tags/travel-tips/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

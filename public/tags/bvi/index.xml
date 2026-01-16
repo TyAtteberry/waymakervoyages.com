@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Way Maker Voyages</title>
-    <link>https://waymakervoyages.com/</link>
-    <description>Recent content in Home on Way Maker Voyages</description>
+    <title>BVI on Way Maker Voyages</title>
+    <link>https://waymakervoyages.com/tags/bvi/</link>
+    <description>Recent content in BVI on Way Maker Voyages</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 10:00:00 +0530</lastBuildDate>
-    <atom:link href="https://waymakervoyages.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://waymakervoyages.com/tags/bvi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring the Best Sailing Routes in the British Virgin Islands</title>
       <link>https://waymakervoyages.com/blog/sample-post/</link>
       <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
       <guid>https://waymakervoyages.com/blog/sample-post/</guid>
       <description>&lt;h2 id=&#34;discovering-paradise-top-sailing-routes-in-the-british-virgin-islands&#34;&gt;Discovering Paradise: Top Sailing Routes in the British Virgin Islands&lt;/h2&gt;&#xA;&lt;p&gt;The British Virgin Islands offer some of the most spectacular sailing experiences in the Caribbean. With crystal-clear waters, gentle trade winds, and stunning island scenery, it&amp;rsquo;s no wonder that this destination tops the list for sailing enthusiasts worldwide.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-classic-route-tortola-to-jost-van-dyke&#34;&gt;The Classic Route: Tortola to Jost Van Dyke&lt;/h3&gt;&#xA;&lt;p&gt;Starting from Road Town on Tortola, this route takes you through some of the most beautiful anchorages in the BVI. The journey begins with a sail to Trellis Bay, where you can enjoy the local amenities and prepare for the adventure ahead.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://waymakervoyages.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://waymakervoyages.com/about/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>about</title>
-      <link>https://waymakervoyages.com/about-us/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://waymakervoyages.com/about-us/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Start Voyag</title>
-      <link>https://waymakervoyages.com/start-voyage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://waymakervoyages.com/start-voyage/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
