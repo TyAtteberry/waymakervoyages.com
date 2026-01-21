@@ -6,7 +6,7 @@ category: "Sailing Adventures"
 tags: ["sailing", "BVI", "adventure", "travel tips"]
 image: /assets/img/about/shutterstock_2293027307 Large 6.jpeg
 ---
-## **Experiential Learning: Why It Works—and Why It Belongs in Family Travel**
+### **Experiential Learning: Why It Works—and Why It Belongs in Family Travel**
 
 In the corporate world, experiential learning has become one of the most powerful tools for building strong teams and teaching lessons that actually stick. Instead of sitting in a conference room or listening to another presentation, teams are placed **inside an experience**—one that requires communication, problem-solving, trust, and leadership.
 
