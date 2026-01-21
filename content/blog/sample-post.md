@@ -4,7 +4,7 @@ date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
 category: "Sailing Adventures"
 tags: ["sailing", "BVI", "adventure", "travel tips"]
-image: /img/about/shutterstock_2293027307 Large 6.jpeg4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+image: /assets/img/about/shutterstock_2293027307 Large 6.jpeg"
 ---
 ## **Experiential Learning: Why It Works—and Why It Belongs in Family Travel**
 
