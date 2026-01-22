@@ -7,7 +7,7 @@ tags: ["sailing", "BVI", "adventure", "travel tips"]
 image: /assets/img/about/shutterstock_684426322.jpeg
 ---
 
-> *They say the days are long, but the years are short.*
+## **They say the days are long, but the years are short**
 
 I always heard that phrase… and nodded along.  
 Now that my wife and I are officially empty nesters, I **feel** it in a way I never could before.
@@ -17,6 +17,7 @@ Looking back, I’m honestly shocked at how fast it all went.
 That doesn’t mean it was easy.
 
 There were seasons we weren’t sure we’d survive:
+
 - sleepless nights with a sick child  
 - potty training boys (enough said)  
 - the teenage years that tested everyone’s patience and faith  
@@ -85,11 +86,10 @@ And here’s the truth—I know you want to spend more time with your kids. You 
 
 ## Don’t Put It Off
 
-So don’t delay it.
-Not one more email.  
-Not one more quarter.  
+- So don’t delay it.
+- Not one more email.  
+- Not one more quarter.  
 
 The time is now.
 
-**Be present. Create memories that last.  
-Book your family voyage today.**
+**Be present. Create memories that last**
