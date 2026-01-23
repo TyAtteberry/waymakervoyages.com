@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59722&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51041&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Blog | Way Maker Voyages</title>
@@ -101,13 +101,11 @@
       
       
       <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="200">
-        <article class="blog-post-card h-100 shadow-sm rounded-4 overflow-hidden border-0">
+        <article class="blog-post-card h-100 shadow-sm rounded-4 overflow-hidden border-0 clickable-card" data-href="/blog/sample-post/">
           <div class="post-img position-relative">
-            
-            <img src="https://images.unsplash.com/photo-1761839258657-457dda39b5cc?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploring the Best Sailing Routes in the British Virgin Islands" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
-            
+            <img src="/assets/img/about/shutterstock_2293027307%20Large%206.jpeg" alt="Experiential Learning: Why It Works—and Why It Belongs in Family Travel" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
             <div class="post-category-badge position-absolute top-0 start-0 m-3">
-              <a href="/blog/?category=sailing-adventures" class="badge bg-primary bg-opacity-75 text-white px-3 py-2 fs-6 text-decoration-none text-reset">Sailing Adventures</a>
+              <a href="/blog/?category=sailing-adventures" class="badge bg-primary bg-opacity-75 text-white px-3 py-2 fs-6 text-decoration-none text-reset" onclick="event.stopPropagation();">Sailing Adventures</a>
             </div>
           </div>
           
@@ -122,19 +120,61 @@
                 </li>
                 <li class="post-author d-flex align-items-center">
                   <i class="bi bi-person text-muted me-1"></i>
-                  <a href="/blog/?author=waymaker-voyages-team" class="text-muted small text-decoration-none">WayMaker Voyages Team</a>
+                  <a href="/blog/?author=waymaker-voyages-team" class="text-muted small text-decoration-none" onclick="event.stopPropagation();">WayMaker Voyages Team</a>
                 </li>
               </ul>
             </div>
             
             <h3 class="post-title h4 mb-3">
-              <a href="/blog/sample-post/" class="text-decoration-none text-dark stretched-link">Exploring the Best Sailing Routes in the British Virgin Islands</a>
+              <a href="/blog/sample-post/" class="text-decoration-none text-dark" onclick="event.stopPropagation();">Experiential Learning: Why It Works—and Why It Belongs in Family Travel</a>
             </h3>
             
-            <p class="post-excerpt text-muted mb-3">Discovering Paradise: Top Sailing Routes in the British Virgin Islands The British Virgin Islands offer some of the most …</p>
+            <p class="post-excerpt text-muted mb-3">Experiential Learning: Why It Works—and Why It Belongs in Family Travel In the corporate world, experiential learning …</p>
             
             <div class="read-more">
-              <a href="/blog/sample-post/" class="text-decoration-none fw-medium">
+              <a href="/blog/sample-post/" class="text-decoration-none fw-medium" onclick="event.stopPropagation();">
+                Read More 
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="300">
+        <article class="blog-post-card h-100 shadow-sm rounded-4 overflow-hidden border-0 clickable-card" data-href="/blog/email/">
+          <div class="post-img position-relative">
+            <img src="/assets/img/about/shutterstock_684426322.jpeg" alt="One More Email" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+            <div class="post-category-badge position-absolute top-0 start-0 m-3">
+              <a href="/blog/?category=sailing-adventures" class="badge bg-primary bg-opacity-75 text-white px-3 py-2 fs-6 text-decoration-none text-reset" onclick="event.stopPropagation();">Sailing Adventures</a>
+            </div>
+          </div>
+          
+          <div class="post-content p-4">
+            <div class="post-meta mb-2">
+              <ul class="post-meta-list d-flex align-items-center list-unstyled">
+                <li class="post-date d-flex align-items-center me-3">
+                  <i class="bi bi-calendar3 text-muted me-1"></i>
+                  <time datetime="2024-05-15T10:00:00&#43;05:30" class="text-muted small">
+                    May 15, 2024
+                  </time>
+                </li>
+                <li class="post-author d-flex align-items-center">
+                  <i class="bi bi-person text-muted me-1"></i>
+                  <a href="/blog/?author=waymaker-voyages-team" class="text-muted small text-decoration-none" onclick="event.stopPropagation();">WayMaker Voyages Team</a>
+                </li>
+              </ul>
+            </div>
+            
+            <h3 class="post-title h4 mb-3">
+              <a href="/blog/email/" class="text-decoration-none text-dark" onclick="event.stopPropagation();">One More Email</a>
+            </h3>
+            
+            <p class="post-excerpt text-muted mb-3">They say the days are long, but the years are short I always heard that phrase… and nodded along.
+Now that my wife and I …</p>
+            
+            <div class="read-more">
+              <a href="/blog/email/" class="text-decoration-none fw-medium" onclick="event.stopPropagation();">
                 Read More 
                 <i class="bi bi-arrow-right ms-1"></i>
               </a>
@@ -148,6 +188,34 @@
     
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  document.querySelectorAll('.clickable-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+      
+      if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button')) {
+        return;
+      }
+      window.location.href = this.dataset.href;
+    });
+    
+    
+    card.style.cursor = 'pointer';
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px)';
+      this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+      this.style.transition = 'all 0.3s ease';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+      this.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+    });
+  });
+});
+</script>
 </main>
 
     <footer id="footer" class="footer light-background">

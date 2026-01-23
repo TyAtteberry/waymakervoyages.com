@@ -2,36 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:59722/tags/adventure/</loc>
+    <loc>http://localhost:51041/tags/adventure/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/blog/</loc>
+    <loc>http://localhost:51041/blog/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/tags/bvi/</loc>
+    <loc>http://localhost:51041/tags/bvi/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/blog/sample-post/</loc>
+    <loc>http://localhost:51041/blog/sample-post/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/</loc>
+    <loc>http://localhost:51041/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/tags/sailing/</loc>
+    <loc>http://localhost:51041/blog/email/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/tags/</loc>
+    <loc>http://localhost:51041/tags/sailing/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/tags/travel-tips/</loc>
+    <loc>http://localhost:51041/tags/</loc>
     <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/about/</loc>
+    <loc>http://localhost:51041/tags/travel-tips/</loc>
+    <lastmod>2024-05-15T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:59722/about-us/</loc>
+    <loc>http://localhost:51041/about/</loc>
   </url><url>
-    <loc>http://localhost:59722/categories/</loc>
+    <loc>http://localhost:51041/about-us/</loc>
   </url><url>
-    <loc>http://localhost:59722/start-voyage/</loc>
+    <loc>http://localhost:51041/categories/</loc>
+  </url><url>
+    <loc>http://localhost:51041/start-voyage/</loc>
   </url>
 </urlset>

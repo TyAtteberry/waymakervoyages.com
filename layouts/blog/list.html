@@ -10,15 +10,11 @@
       {{ $paginator := .Paginator 6 }}
       {{ range $index, $page := $paginator.Pages }}
       <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="{{ add 200 (mul $index 100) }}">
-        <article class="blog-post-card h-100 shadow-sm rounded-4 overflow-hidden border-0">
+        <article class="blog-post-card h-100 shadow-sm rounded-4 overflow-hidden border-0 clickable-card" data-href="{{ $page.RelPermalink }}">
           <div class="post-img position-relative">
-            {{ if $page.Params.image }}
-            <img src="{{ $page.Params.image }}" alt="{{ $page.Title }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
-            {{ else }}
-            <img src="/assets/img/blog-default.jpg" alt="{{ $page.Title }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
-            {{ end }}
+            <img src="{{ $page.Params.image | default "/assets/img/blog-default.jpg" }}" alt="{{ $page.Title }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
             <div class="post-category-badge position-absolute top-0 start-0 m-3">
-              <a href="/blog/?category={{ $page.Params.category | default "uncategorized" | urlize }}" class="badge bg-primary bg-opacity-75 text-white px-3 py-2 fs-6 text-decoration-none text-reset">{{ $page.Params.category | default "Uncategorized" }}</a>
+              <a href="/blog/?category={{ $page.Params.category | default "uncategorized" | urlize }}" class="badge bg-primary bg-opacity-75 text-white px-3 py-2 fs-6 text-decoration-none text-reset" onclick="event.stopPropagation();">{{ $page.Params.category | default "Uncategorized" }}</a>
             </div>
           </div>
           
@@ -33,19 +29,19 @@
                 </li>
                 <li class="post-author d-flex align-items-center">
                   <i class="bi bi-person text-muted me-1"></i>
-                  <a href="/blog/?author={{ $page.Params.author | default "admin" | urlize }}" class="text-muted small text-decoration-none">{{ $page.Params.author | default "Admin" }}</a>
+                  <a href="/blog/?author={{ $page.Params.author | default "admin" | urlize }}" class="text-muted small text-decoration-none" onclick="event.stopPropagation();">{{ $page.Params.author | default "Admin" }}</a>
                 </li>
               </ul>
             </div>
             
             <h3 class="post-title h4 mb-3">
-              <a href="{{ $page.RelPermalink }}" class="text-decoration-none text-dark stretched-link">{{ $page.Title }}</a>
+              <a href="{{ $page.RelPermalink }}" class="text-decoration-none text-dark" onclick="event.stopPropagation();">{{ $page.Title }}</a>
             </h3>
             
             <p class="post-excerpt text-muted mb-3">{{ $page.Summary | plainify | htmlUnescape | truncate 120 }}</p>
             
             <div class="read-more">
-              <a href="{{ $page.RelPermalink }}" class="text-decoration-none fw-medium">
+              <a href="{{ $page.RelPermalink }}" class="text-decoration-none fw-medium" onclick="event.stopPropagation();">
                 Read More 
                 <i class="bi bi-arrow-right ms-1"></i>
               </a>
@@ -93,4 +89,32 @@
     {{ end }}{{ end }}
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click handlers to all clickable cards
+  document.querySelectorAll('.clickable-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+      // Don't trigger if clicking on links or buttons
+      if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button')) {
+        return;
+      }
+      window.location.href = this.dataset.href;
+    });
+    
+    // Add hover effect
+    card.style.cursor = 'pointer';
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px)';
+      this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+      this.style.transition = 'all 0.3s ease';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+      this.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+    });
+  });
+});
+</script>
 {{end}}

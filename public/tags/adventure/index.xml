@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adventure on Way Maker Voyages</title>
-    <link>http://localhost:59722/tags/adventure/</link>
+    <link>http://localhost:51041/tags/adventure/</link>
     <description>Recent content in Adventure on Way Maker Voyages</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 10:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:59722/tags/adventure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51041/tags/adventure/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Exploring the Best Sailing Routes in the British Virgin Islands</title>
-      <link>http://localhost:59722/blog/sample-post/</link>
+      <title>Experiential Learning: Why It Works—and Why It Belongs in Family Travel</title>
+      <link>http://localhost:51041/blog/sample-post/</link>
       <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:59722/blog/sample-post/</guid>
-      <description>&lt;h2 id=&#34;discovering-paradise-top-sailing-routes-in-the-british-virgin-islands&#34;&gt;Discovering Paradise: Top Sailing Routes in the British Virgin Islands&lt;/h2&gt;&#xA;&lt;p&gt;The British Virgin Islands offer some of the most spectacular sailing experiences in the Caribbean. With crystal-clear waters, gentle trade winds, and stunning island scenery, it&amp;rsquo;s no wonder that this destination tops the list for sailing enthusiasts worldwide.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-classic-route-tortola-to-jost-van-dyke&#34;&gt;The Classic Route: Tortola to Jost Van Dyke&lt;/h3&gt;&#xA;&lt;p&gt;Starting from Road Town on Tortola, this route takes you through some of the most beautiful anchorages in the BVI. The journey begins with a sail to Trellis Bay, where you can enjoy the local amenities and prepare for the adventure ahead.&lt;/p&gt;</description>
+      <guid>http://localhost:51041/blog/sample-post/</guid>
+      <description>&lt;h3 id=&#34;experiential-learning-why-it-worksand-why-it-belongs-in-family-travel&#34;&gt;&lt;strong&gt;Experiential Learning: Why It Works—and Why It Belongs in Family Travel&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;In the corporate world, experiential learning has become one of the most powerful tools for building strong teams and teaching lessons that actually stick. Instead of sitting in a conference room or listening to another presentation, teams are placed &lt;strong&gt;inside an experience&lt;/strong&gt;—one that requires communication, problem-solving, trust, and leadership.&lt;/p&gt;&#xA;&lt;p&gt;The results speak for themselves. Companies use experiential learning because it works.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>One More Email</title>
+      <link>http://localhost:51041/blog/email/</link>
+      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
+      <guid>http://localhost:51041/blog/email/</guid>
+      <description>&lt;h2 id=&#34;they-say-the-days-are-long-but-the-years-are-short&#34;&gt;&lt;strong&gt;They say the days are long, but the years are short&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;I always heard that phrase… and nodded along.&lt;br&gt;&#xA;Now that my wife and I are officially empty nesters, I &lt;strong&gt;feel&lt;/strong&gt; it in a way I never could before.&lt;/p&gt;&#xA;&lt;p&gt;Looking back, I’m honestly shocked at how fast it all went.&lt;/p&gt;&#xA;&lt;p&gt;That doesn’t mean it was easy.&lt;/p&gt;&#xA;&lt;p&gt;There were seasons we weren’t sure we’d survive:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;sleepless nights with a sick child&lt;/li&gt;&#xA;&lt;li&gt;potty training boys (enough said)&lt;/li&gt;&#xA;&lt;li&gt;the teenage years that tested everyone’s patience and faith&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Somehow, by God’s grace, we were blessed with three incredible kids. They are, without question, what I’m most proud of in this life. And if we’re being honest, most of the credit goes to my wife.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
