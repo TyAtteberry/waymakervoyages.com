@@ -2,9 +2,9 @@
 title: "The Compass"
 date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
-category: "Sailing Adventures"
+category: "Life Like a Sailor"
 tags: ["sailing", "BVI", "adventure", "travel tips", "life tips"]
-image: /assets/img/about/shutterstock_684426322.jpeg
+image: /assets/img/about/shutterstock_1114129625.jpeg
 ---
 
 ## **What a Sailors Compass Teaches Us About Life**
