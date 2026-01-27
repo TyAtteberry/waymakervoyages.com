@@ -4,7 +4,7 @@ date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
 category: "Sailing Adventures"
 tags: ["sailing", "BVI", "adventure", "travel tips"]
-image: /assets/img/about/shutterstock_684426322.jpeg
+image: /assets/img/about/shutterstock_618901226.jpeg
 ---
 ## **Learning from Those Who’ve Gone Before You**
 
