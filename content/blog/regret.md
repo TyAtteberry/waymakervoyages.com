@@ -4,7 +4,7 @@ date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
 category: "Sailing Adventures"
 tags: ["sailing", "BVI", "adventure", "travel tips","life tips"]
-image: /assets/img/about/shutterstock_684426322.jpeg
+image: /assets/img/about/shutterstock_1333797128 copy 4.jpeg
 ---
 
 ## **“Throw Off the Bowlines”: A Note to High Performers Who’ve Been Playing It Safe**
