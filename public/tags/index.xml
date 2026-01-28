@@ -2,38 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Way Maker Voyages</title>
-    <link>http://localhost:51041/tags/</link>
+    <link>http://localhost:59637/tags/</link>
     <description>Recent content in Tags on Way Maker Voyages</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 10:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:51041/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:59637/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adventure</title>
-      <link>http://localhost:51041/tags/adventure/</link>
+      <link>http://localhost:59637/tags/adventure/</link>
       <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:51041/tags/adventure/</guid>
+      <guid>http://localhost:59637/tags/adventure/</guid>
       <description></description>
     </item>
     <item>
       <title>BVI</title>
-      <link>http://localhost:51041/tags/bvi/</link>
+      <link>http://localhost:59637/tags/bvi/</link>
       <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:51041/tags/bvi/</guid>
+      <guid>http://localhost:59637/tags/bvi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life Tips</title>
+      <link>http://localhost:59637/tags/life-tips/</link>
+      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
+      <guid>http://localhost:59637/tags/life-tips/</guid>
       <description></description>
     </item>
     <item>
       <title>Sailing</title>
-      <link>http://localhost:51041/tags/sailing/</link>
+      <link>http://localhost:59637/tags/sailing/</link>
       <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:51041/tags/sailing/</guid>
+      <guid>http://localhost:59637/tags/sailing/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel Tips</title>
-      <link>http://localhost:51041/tags/travel-tips/</link>
+      <link>http://localhost:59637/tags/travel-tips/</link>
       <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:51041/tags/travel-tips/</guid>
+      <guid>http://localhost:59637/tags/travel-tips/</guid>
       <description></description>
     </item>
   </channel>

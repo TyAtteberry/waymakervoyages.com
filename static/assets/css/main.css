@@ -2693,14 +2693,75 @@ section,
   box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing .price-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
 }
 
 .pricing .price-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 40px
-    color-mix(in srgb, var(--default-color), transparent 88%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-color);
+}
+
+.pricing .price-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Pricing Animations */
+.pricing .price-card .card-head .price-wrap .price {
+  animation: priceAppear 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.pricing .price-card:nth-child(1) .card-head .price-wrap .price {
+  animation-delay: 0.2s;
+}
+
+.pricing .price-card:nth-child(2) .card-head .price-wrap .price {
+  animation-delay: 0.4s;
+}
+
+.pricing .price-card:nth-child(3) .card-head .price-wrap .price {
+  animation-delay: 0.6s;
+}
+
+@keyframes priceAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.pricing .price-card .card-head .price-wrap .price-details {
+  animation: detailsAppear 0.6s ease-out 0.8s both;
+}
+
+@keyframes detailsAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
 }
 
 .pricing .price-card.featured {
@@ -2778,8 +2839,22 @@ section,
 
 .pricing .price-card .card-head .price-wrap {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.pricing .price-card .card-head .price-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  opacity: 0.3;
 }
 
 .pricing .price-card .card-head .price-wrap .price {
@@ -2787,14 +2862,92 @@ section,
   color: var(--heading-color);
   font-weight: 800;
   line-height: 1;
-  display: none;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.pricing .price-card:hover .card-head .price-wrap .price {
+  transform: scale(1.05);
+  color: var(--accent-color);
 }
 
 .pricing .price-card .card-head .price-wrap .price sup {
-  font-size: 18px;
   top: -0.6em;
   position: relative;
   margin-right: 2px;
+  color: var(--accent-color);
+  font-weight: 400;
+}
+
+.pricing .price-card .card-head .price-wrap .price .period {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-left: 8px;
+  font-weight: 500;
+  align-self: flex-end;
+  margin-bottom: 4px;
+}
+
+/* Enhanced price details */
+.pricing .price-card .card-head .price-wrap .price-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.pricing .price-card:hover .card-head .price-wrap .price-details {
+  opacity: 1;
+}
+
+.pricing .price-card .card-head .price-wrap .price-breakdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  transition: all 0.3s ease;
+}
+
+.pricing .price-card .card-head .price-wrap .price-breakdown:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  transform: translateY(-2px);
+}
+
+.pricing .price-card .card-head .price-wrap .price-breakdown i {
+  font-size: 0.9rem;
+}
+
+.pricing .price-card .card-head .price-wrap .price-savings .badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
 }
 
 .pricing .price-card .card-head .price-wrap .price.price-monthly,
@@ -5165,4 +5318,45 @@ select.form-input {
 .loading {
   background: #fff;
   text-align: center;
+}
+
+/* Responsive Pricing Enhancements */
+@media (max-width: 768px) {
+  .pricing .price-card .card-head .price-wrap .price {
+    font-size: 2.8rem;
+  }
+
+  .pricing .price-card .card-head .price-wrap .price sup {
+    font-size: 1.4rem;
+  }
+
+  .pricing .price-card .card-head .price-wrap .price .period {
+    font-size: 0.9rem;
+  }
+
+  .pricing .price-card .card-head .price-wrap .price-breakdown {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .pricing .price-card .card-head .price-wrap .price-savings .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .pricing .price-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing .price-card .card-head .price-wrap .price-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .pricing .price-card .card-head .price-wrap .price {
+    font-size: 2.4rem;
+  }
 }
