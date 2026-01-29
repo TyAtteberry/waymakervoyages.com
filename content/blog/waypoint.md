@@ -4,7 +4,7 @@ date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
 category: "Sailing Adventures"
 tags: ["sailing", "BVI", "adventure", "travel tips", "life tips"]
-image: /assets/img/about/shutterstock_684426322.jpeg
+image: /assets/img/about/ChatGPT Image Jan 29, 2026 at 11_49_53 AM.png
 ---
 
 ## **Bearings & Waypoints**
