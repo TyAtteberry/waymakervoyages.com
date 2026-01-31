@@ -2,7 +2,7 @@
 title: "Wisdom,Mentorship, and Avoiding Life's Hazards"
 date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
-category: "Sailing Adventures"
+category: "Life Like a Sailor"
 tags: ["sailing", "BVI", "adventure", "travel tips"]
 image: /assets/img/about/shutterstock_618901226.jpeg
 ---
