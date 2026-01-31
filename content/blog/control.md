@@ -4,7 +4,7 @@ date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
 category: "Life Like a Sailor"
 tags: ["sailing", "BVI", "adventure", "travel tips", "life tips"]
-image: /assets/img/about/shutterstock_1114129625.jpeg
+image: /assets/img/about/ChatGPT Image Jan 31, 2026 at 07_46_58 AM.png
 ---
 
 ## **Wind & Current**
