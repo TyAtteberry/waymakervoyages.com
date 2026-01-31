@@ -2,7 +2,7 @@
 title: "Are you Drifting?"
 date: 2024-05-15T10:00:00+05:30
 author: "WayMaker Voyages Team"
-category: "Sailing Adventures"
+category: "Life Like a Sailor"
 tags: ["sailing", "BVI", "adventure", "travel tips", "life tips"]
 image: /assets/img/ChatGPT Image Jan 30, 2026 at 08_33_32 AM.png
 ---
