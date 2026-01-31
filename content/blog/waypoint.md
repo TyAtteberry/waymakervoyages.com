@@ -1,6 +1,6 @@
 ---
 title: "Overwhelmed?"
-date: 2024-05-15T10:00:00+05:30
+date: 2026-01-25T10:00:00+05:30
 author: "WayMaker Voyages Team"
 category: "Life Like a Sailor"
 tags: ["sailing", "BVI", "adventure", "travel tips", "life tips"]
