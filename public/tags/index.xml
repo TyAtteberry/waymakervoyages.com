@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Way Maker Voyages</title>
-    <link>http://localhost:59637/tags/</link>
+    <link>http://localhost:57375/tags/</link>
     <description>Recent content in Tags on Way Maker Voyages</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2024 10:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:59637/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jan 2026 10:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:57375/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adventure</title>
-      <link>http://localhost:59637/tags/adventure/</link>
-      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:59637/tags/adventure/</guid>
+      <link>http://localhost:57375/tags/adventure/</link>
+      <pubDate>Fri, 30 Jan 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:57375/tags/adventure/</guid>
       <description></description>
     </item>
     <item>
       <title>BVI</title>
-      <link>http://localhost:59637/tags/bvi/</link>
-      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:59637/tags/bvi/</guid>
+      <link>http://localhost:57375/tags/bvi/</link>
+      <pubDate>Fri, 30 Jan 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:57375/tags/bvi/</guid>
       <description></description>
     </item>
     <item>
       <title>Life Tips</title>
-      <link>http://localhost:59637/tags/life-tips/</link>
-      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:59637/tags/life-tips/</guid>
+      <link>http://localhost:57375/tags/life-tips/</link>
+      <pubDate>Fri, 30 Jan 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:57375/tags/life-tips/</guid>
       <description></description>
     </item>
     <item>
       <title>Sailing</title>
-      <link>http://localhost:59637/tags/sailing/</link>
-      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:59637/tags/sailing/</guid>
+      <link>http://localhost:57375/tags/sailing/</link>
+      <pubDate>Fri, 30 Jan 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:57375/tags/sailing/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel Tips</title>
-      <link>http://localhost:59637/tags/travel-tips/</link>
-      <pubDate>Wed, 15 May 2024 10:00:00 +0530</pubDate>
-      <guid>http://localhost:59637/tags/travel-tips/</guid>
+      <link>http://localhost:57375/tags/travel-tips/</link>
+      <pubDate>Fri, 30 Jan 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:57375/tags/travel-tips/</guid>
       <description></description>
     </item>
   </channel>

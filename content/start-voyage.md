@@ -1,4 +1,4 @@
 ---
 title: Start Voyag
-layout: start-voyag
+layout: start-voyage
 ---

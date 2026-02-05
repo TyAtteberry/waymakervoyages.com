@@ -5,25 +5,16 @@
     <p>Tell us about your dream sailing adventure</p>
   </div>
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container contact" data-aos="fade-up" data-aos-delay="100">
     <div class="row justify-content-center">
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
         <div class="contact-form-container">
-          <div class="form-intro">
-            <h2>Plan Your Perfect Getaway</h2>
-            <p>
-              Fill out the form below and our travel specialists will contact
-              you to customize your ideal sailing experience in the British
-              Virgin Islands.
-            </p>
-          </div>
-
           <form
-            action="/forms/voyage-planner.php"
+            action="https://formspree.io/f/mykjyjov"
             method="post"
             class="php-email-form contact-form"
           >
-            <div class="row">
+            <div class="row g-4">
               <div class="col-md-6">
                 <div class="form-field">
                   <input
@@ -31,9 +22,12 @@
                     name="name"
                     class="form-input"
                     id="voyageName"
-                    placeholder="Your Name"
+                    placeholder=" "
                     required
                   />
+                  <label for="voyageName" class="field-label"
+                    >Full Name *</label
+                  >
                 </div>
               </div>
 
@@ -44,77 +38,82 @@
                     class="form-input"
                     name="email"
                     id="voyageEmail"
-                    placeholder="Your Email"
+                    placeholder=" "
                     required
                   />
+                  <label for="voyageEmail" class="field-label"
+                    >Email Address *</label
+                  >
+                  <div class="invalid-feedback">Please enter a valid email</div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
+            <div class="row g-4 ">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="tel"
+                    class="form-input"
+                    name="phone"
+                    id="voyagePhone"
+                    placeholder=" "
+                  />
+                  <label for="voyagePhone" class="field-label"
+                    >Phone Number (Optional)</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="number"
+                    class="form-input"
+                    name="number_of_people"
+                    id="voyagePeople"
+                    min="1"
+                    max="50"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="voyagePeople" class="field-label"
+                    >Number of People *</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 margintop">
               <div class="col-md-6">
                 <div class="form-field">
                   <input
                     type="date"
                     class="form-input"
-                    name="preferred_date"
-                    id="voyageDate"
+                    name="start_date"
+                    id="voyageStartDate"
                     required
                   />
-                  <label for="voyageDate" class="field-label"
-                    >Preferred Date</label
+                  <label for="voyageStartDate" class="field-label"
+                    >Start Date *</label
                   >
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-field">
-                  <select
+                  <input
+                    type="date"
                     class="form-input"
-                    name="number_of_people"
-                    id="voyagePeople"
+                    name="end_date"
+                    id="voyageEndDate"
                     required
+                  />
+                  <label for="voyageEndDate" class="field-label"
+                    >End Date *</label
                   >
-                    <option value="" disabled selected>
-                      Select Number of People
-                    </option>
-                    <option value="1">1 Person</option>
-                    <option value="2">2 People</option>
-                    <option value="3">3 People</option>
-                    <option value="4">4 People</option>
-                    <option value="5">5 People</option>
-                    <option value="6">6 People</option>
-                    <option value="7+">7+ People</option>
-                  </select>
                 </div>
               </div>
-            </div>
-
-            <div class="form-field">
-              <select
-                class="form-input"
-                name="trip_type"
-                id="voyageType"
-                required
-              >
-                <option value="" disabled selected>Select Trip Type</option>
-                <option value="family">Family Vacation</option>
-                <option value="father-son">Father & Son</option>
-                <option value="mother-daughter">Mother & Daughter</option>
-                <option value="business">Business Retreat</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <textarea
-                class="form-input message-input"
-                name="purpose"
-                id="voyagePurpose"
-                rows="3"
-                placeholder="What is the main purpose of your trip? (e.g., relaxation, adventure, team building, bonding time, etc.)"
-                required
-              ></textarea>
             </div>
 
             <div class="form-field">
@@ -122,10 +121,14 @@
                 class="form-input message-input"
                 name="goals"
                 id="voyageGoals"
-                rows="3"
-                placeholder="What are your goals for this voyage? (e.g., specific activities, experiences you want, outcomes you hope to achieve)"
+                rows="5"
+                placeholder=" "
                 required
               ></textarea>
+              <label for="voyageGoals" class="field-label"
+                >Goals of Voyage *</label
+              >
+              
             </div>
 
             <div class="form-field">
@@ -133,24 +136,35 @@
                 class="form-input message-input"
                 name="additional_info"
                 id="voyageAdditional"
-                rows="2"
-                placeholder="Any additional information or special requests"
+                rows="3"
+                placeholder=" "
               ></textarea>
+              <label for="voyageAdditional" class="field-label"
+                >Additional Information (Optional)</label
+              >
             </div>
 
-            <div class="my-3">
-              <div class="loading">Processing your request</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
+            <div class="my-4">
+              <div class="loading text-center py-3 d-none">
+                
+                <p class="mt-2 mb-0">Submitting your request...</p>
+              </div>
+              <div
+                class="error-message alert alert-danger d-none"
+                role="alert"
+              ></div>
+              <div class="sent-message alert alert-success d-none" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
                 Thank you! We've received your voyage request and will contact
                 you soon to plan your perfect sailing adventure.
               </div>
             </div>
 
             <button type="submit" class="send-button">
-              Submit Voyage Request
+              Book Now
               <span class="button-arrow">→</span>
             </button>
+            </div>
           </form>
         </div>
       </div>
