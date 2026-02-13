@@ -1,0 +1,11 @@
+<div class="video-container mb-4 shadow-sm rounded overflow-hidden">
+    <div class="ratio {{ if .Get "shorts" }}ratio-9x16{{ else }}ratio-16x9{{ end }}">
+        <iframe 
+            src="https://www.youtube.com/embed/{{ .Get "id" }}" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>

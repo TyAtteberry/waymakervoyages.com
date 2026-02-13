@@ -6,6 +6,7 @@ category: "Life Like a Sailor"
 tags: ["sailing", "BVI", "adventure", "travel tips"]
 image: /assets/img/about/shutterstock_618901226.jpeg
 ---
+
 ## **Learning from Those Who’ve Gone Before You**
 
 ### **What Nautical Charts Teach Us About Wisdom, Mentorship, and Avoiding Life’s Hidden Hazards**
@@ -20,6 +21,7 @@ Charts don’t exist to tell you where to go.
 And that lesson extends far beyond sailing.
 
 ### **The Danger of What You Can’t See**
+
 From the helm, the ocean often looks calm and forgiving. Blue water stretches out in every direction. Nothing about the surface suggests danger.
 But charts tell a different story.
 Reefs just below the surface.
@@ -33,7 +35,7 @@ Some of the most damaging hazards aren’t obvious:
 - Isolation
 - Misplaced priorities
 - Shortcuts that look harmless at first
-  
+
 If you rely only on what you can see, you’ll miss what matters most.
 
 ### **Charts Are Wisdom Preserved**
@@ -70,7 +72,7 @@ It consistently reveals:
 - Where danger hides
 - What leads to life
 - Which paths look right but end poorly
-  
+
 In a world full of opinions, scripture provides a fixed reference—much like a chart that remains reliable no matter how often it’s unfolded.
 
 ### **Tools That Keep You Oriented**
@@ -81,7 +83,7 @@ Modern sailors don’t rely on charts alone. They use multiple tools:
 - Bearings
 - GPS
 - Depth sounders
-  
+
 Not because they lack confidence—but because **redundancy increases safety.**
 Life benefits from the same approach:
 
@@ -90,8 +92,8 @@ Life benefits from the same approach:
 - Reflection
 - Prayer
 - Accountability
-The goal isn’t certainty.
-It’s awareness.
+  The goal isn’t certainty.
+  It’s awareness.
 
 ### **Pride Is the Most Common Hazard**
 
@@ -102,7 +104,7 @@ It whispers:
 - “I don’t need advice.”
 - “That won’t happen to me.”
 - “I’ve got this.”
-  
+
 Most wrecks don’t happen because charts were wrong.
 **They happen because charts were ignored.**
 
@@ -131,3 +133,6 @@ They don’t make decisions for you.
 But they help you avoid hazards you never needed to discover firsthand.
 And in sailing—and in life—that kind of wisdom is invaluable.
 
+## Daily Devotions
+
+{{< youtube id="x99Vmrz83CA" >}}
