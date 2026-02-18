@@ -1,0 +1,110 @@
+{{define "main"}}
+<section id="blog-list" class="blog-list section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Daily Devotions</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+      {{ $paginator := .Paginator 6 }}
+      {{ range $index, $page := $paginator.Pages }}
+      <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="{{ add 200 (mul $index 100) }}">
+        <article class="blog-post-card h-100 shadow-sm rounded-4 overflow-hidden border-0 clickable-card" data-href="{{ $page.Params.ytlink }}">
+          <div class="post-img position-relative">
+            <img src="{{ $page.Params.image | default "/assets/img/blog-default.jpg" }}" alt="{{ $page.Title }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+          </div>
+          
+          <div class="post-content p-4">
+            <div class="post-meta mb-2">
+              <ul class="post-meta-list d-flex align-items-center list-unstyled">
+                <li class="post-date d-flex align-items-center me-3">
+                  <i class="bi bi-calendar3 text-muted me-1"></i>
+                  <time datetime="{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}" class="text-muted small">
+                    {{ $page.Date.Format "January 2, 2006" }}
+                  </time>
+                </li>
+              </ul>
+            </div>
+            
+            <h3 class="post-title h4 mb-3">
+              <a href="{{ $page.Params.ytlink }}" target="_blank" class="text-decoration-none text-dark" onclick="event.stopPropagation();">{{ $page.Title }}</a>
+            </h3>
+            
+            <p class="post-excerpt text-muted mb-3">{{ $page.Description | plainify | htmlUnescape | truncate 120 }}</p>
+            
+            <div class="read-more">
+              <a href="{{ $page.Params.ytlink }}" target="_blank" class="text-decoration-none fw-medium" onclick="event.stopPropagation();">
+                Read More 
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+    
+    {{ if or $paginator.HasPrev $paginator.HasNext }}
+    <div class="d-flex justify-content-center mt-5">
+      <nav aria-label="Blog pagination">
+        <ul class="pagination">
+          {{ if $paginator.HasPrev }}
+          <li class="page-item">
+            <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
+              <i class="bi bi-chevron-left"></i>
+            </a>
+          </li>
+          {{ end }}
+          
+          {{ range $paginator.Pagers }}
+          <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+            <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+          </li>
+          {{ end }}
+          
+          {{ if $paginator.HasNext }}
+          <li class="page-item">
+            <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<style>
+  .clickable-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .clickable-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.clickable-card');
+  
+  cards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      // If the user clicked an actual <a> tag, let the browser handle it naturally
+      if (e.target.closest('a')) {
+        return;
+      }
+      
+      const url = this.getAttribute('data-href');
+      if (url) {
+        // Opens the link in a new tab/window
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
+    });
+  });
+});
+</script>
+{{end}}
