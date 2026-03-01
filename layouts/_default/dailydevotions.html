@@ -1,27 +1,228 @@
 {{define "main"}}
 <section class="section">
   <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <h2>{{ .Title }}</h2>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <div class="section-title">
+      <h2>Daily Devotions</h2>
+      <p>Short devotions from the water — each one filmed aboard a sailing voyage in the British Virgin Islands. Press play, and let the sea speak.</p>
     </div>
     <div class="row gy-4">
-      {{ range .Pages }}
-      <div class="col-lg-4 col-md-6" data-aos="fade-up">
-        <article class="card h-100">
-          {{ with .Params.image }}
-          <img src="{{ . }}" alt="{{ $.Title }}" class="card-img-top" loading="lazy" />
-          {{ end }}
-          <div class="card-body">
-            <h3 class="card-title">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h3>
-            <p class="card-text">{{ .Summary }}</p>
-            <a href="{{ .Permalink }}" class="btn-link">Read More <i class="bi bi-arrow-right"></i></a>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/yXT_n-gUITU" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/yXT_n-gUITU/hqdefault.jpg" alt="Against the Wind" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Against the Wind</h5>
+            <a href="https://youtu.be/yXT_n-gUITU" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
           </div>
         </article>
       </div>
-      {{ end }}
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/ofKJX986VBA" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/ofKJX986VBA/hqdefault.jpg" alt="A Seat at the Table" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">A Seat at the Table</h5>
+            <a href="https://youtu.be/ofKJX986VBA" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/tgqOz0FdEdk" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/tgqOz0FdEdk/hqdefault.jpg" alt="Are You Secure?" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Are You Secure?</h5>
+            <a href="https://youtu.be/tgqOz0FdEdk" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/PoxfQh4wTAQ" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/PoxfQh4wTAQ/hqdefault.jpg" alt="Overwhelmed" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Overwhelmed</h5>
+            <a href="https://youtu.be/PoxfQh4wTAQ" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/yCDACBq-A1I" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/yCDACBq-A1I/hqdefault.jpg" alt="Let Go of the Line" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Let Go of the Line</h5>
+            <a href="https://youtu.be/yCDACBq-A1I" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/O_-2TSW1LTI" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/O_-2TSW1LTI/hqdefault.jpg" alt="What is Dragging You Down?" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">What is Dragging You Down?</h5>
+            <a href="https://youtu.be/O_-2TSW1LTI" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/y1bI-MuB5IA" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/y1bI-MuB5IA/hqdefault.jpg" alt="Grace Has the Right of Way" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Grace Has the Right of Way</h5>
+            <a href="https://youtu.be/y1bI-MuB5IA" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/LVAPd-WfFHw" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/LVAPd-WfFHw/hqdefault.jpg" alt="Are You Off Track?" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Are You Off Track?</h5>
+            <a href="https://youtu.be/LVAPd-WfFHw" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/y73mVc9y3Gc" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/y73mVc9y3Gc/hqdefault.jpg" alt="Early Detection" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Early Detection</h5>
+            <a href="https://youtu.be/y73mVc9y3Gc" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/6rmm17KxF1A" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/6rmm17KxF1A/hqdefault.jpg" alt="What is Holding You Back?" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">What is Holding You Back?</h5>
+            <a href="https://youtu.be/6rmm17KxF1A" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/VDnRpcxqsT0" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/VDnRpcxqsT0/hqdefault.jpg" alt="Early Warning Signs" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Early Warning Signs</h5>
+            <a href="https://youtu.be/VDnRpcxqsT0" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/ZLBwMcnwyCk" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/ZLBwMcnwyCk/hqdefault.jpg" alt="Anchors Are for Waiting NOT Living" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Anchors Are for Waiting NOT Living</h5>
+            <a href="https://youtu.be/ZLBwMcnwyCk" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/dej-ufdYSoU" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/dej-ufdYSoU/hqdefault.jpg" alt="Safe Harbors Are Not a Destination" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Safe Harbors Are Not a Destination</h5>
+            <a href="https://youtu.be/dej-ufdYSoU" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/_WTmi41wDD4" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/_WTmi41wDD4/hqdefault.jpg" alt="Being Right is Not Enough" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Being Right is Not Enough</h5>
+            <a href="https://youtu.be/_WTmi41wDD4" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/07gNu5IdS-A" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/07gNu5IdS-A/hqdefault.jpg" alt="Are You Alone?" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Are You Alone?</h5>
+            <a href="https://youtu.be/07gNu5IdS-A" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/ivZdN1vdUDc" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/ivZdN1vdUDc/hqdefault.jpg" alt="Distracted" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Distracted</h5>
+            <a href="https://youtu.be/ivZdN1vdUDc" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/yvR857ebc6Y" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/yvR857ebc6Y/hqdefault.jpg" alt="Lost" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Lost</h5>
+            <a href="https://youtu.be/yvR857ebc6Y" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="card h-100" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(26,46,68,0.08); transition: all 0.3s ease;">
+          <a href="https://youtu.be/ttX4P5sR6zQ" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/ttX4P5sR6zQ/hqdefault.jpg" alt="Reach Out a Hand" class="card-img-top" style="height: 200px; object-fit: cover;" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: var(--heading-font); color: var(--heading-color);">Reach Out a Hand</h5>
+            <a href="https://youtu.be/ttX4P5sR6zQ" target="_blank" rel="noopener" class="btn-link" style="color: var(--accent-warm); font-weight: 600;">Watch Now <i class="bi bi-play-circle"></i></a>
+          </div>
+        </article>
+      </div>
+
     </div>
   </div>
 </section>
