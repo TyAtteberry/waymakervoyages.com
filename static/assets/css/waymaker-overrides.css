@@ -614,3 +614,10 @@ a.btn-link:hover {
     align-items: flex-start;
   }
 }
+
+/* Fix AOS - make all animated elements visible immediately */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
