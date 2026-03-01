@@ -1,0 +1,616 @@
+/* ============================================================
+   WayMaker Voyages — Design Overrides
+   New color palette, typography, and Gift a Voyage section
+   Place this file AFTER main.css in the head
+   ============================================================ */
+
+/* --- Color Palette --- */
+:root {
+  --default-font: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Playfair Display", Georgia, "Times New Roman", serif;
+  --nav-font: "DM Sans", "Open Sans", sans-serif;
+
+  --background-color: #fdfbf8;
+  --default-color: #3d3d3d;
+  --heading-color: #1a2e44;
+  --accent-color: #1a2e44;
+  --accent-warm: #c4795b;
+  --accent-warm-light: #d4937a;
+  --accent-gold: #c9a84c;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  --nav-color: #1a2e44;
+  --nav-hover-color: #c4795b;
+  --nav-mobile-background-color: #fdfbf8;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #1a2e44;
+  --nav-dropdown-hover-color: #c4795b;
+}
+
+.light-background {
+  --background-color: #f5f1eb;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #1a2e44;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #152538;
+  --contrast-color: #ffffff;
+}
+
+/* --- Base Typography --- */
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+a {
+  color: var(--accent-warm);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-warm-light);
+}
+
+/* --- Header / Topbar --- */
+.header .topbar {
+  background-color: var(--accent-color) !important;
+}
+
+.header .branding {
+  background-color: var(--background-color);
+}
+
+.scrolled .header .branding {
+  box-shadow: 0 2px 20px rgba(26, 46, 68, 0.08);
+}
+
+.navmenu a {
+  font-family: var(--nav-font);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.navmenu a:hover,
+.navmenu a.active {
+  color: var(--accent-warm) !important;
+}
+
+/* --- Hero Section --- */
+.hero .hero-tagline {
+  display: inline-block;
+  font-family: var(--default-font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-family: var(--heading-font);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--default-color);
+  max-width: 540px;
+}
+
+.hero .btn-primary {
+  background-color: var(--accent-warm);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-family: var(--default-font);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--accent-warm-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(196, 121, 91, 0.3);
+}
+
+.hero .btn-secondary {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.hero .btn-secondary:hover {
+  color: var(--accent-warm);
+}
+
+.hero .floating-card {
+  background: var(--accent-color);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.hero .floating-card .number {
+  color: var(--accent-warm);
+}
+
+/* --- Section Titles --- */
+.section-title h2 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.section-title p {
+  color: var(--default-color);
+  font-size: 1.05rem;
+}
+
+/* --- Buttons (global) --- */
+.btn-primary,
+a.btn-primary {
+  background-color: var(--accent-warm) !important;
+  color: #fff !important;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-family: var(--default-font);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+a.btn-primary:hover {
+  background-color: var(--accent-warm-light) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(196, 121, 91, 0.3);
+  color: #fff !important;
+}
+
+.btn-link,
+a.btn-link {
+  color: var(--accent-warm);
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--default-font);
+}
+
+.btn-link:hover,
+a.btn-link:hover {
+  color: var(--accent-warm-light);
+}
+
+/* --- Testimonials --- */
+.testimonials .testimonial-item {
+  background: var(--surface-color);
+  border-radius: 12px;
+  border: 1px solid rgba(26, 46, 68, 0.06);
+  transition: all 0.3s ease;
+}
+
+.testimonials .testimonial-item:hover {
+  box-shadow: 0 12px 40px rgba(26, 46, 68, 0.1);
+  transform: translateY(-4px);
+}
+
+.testimonials .rating .bi-star-fill {
+  color: var(--accent-gold);
+}
+
+.testimonials .testimonial-footer h5 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+.testimonials .quote-icon i {
+  color: var(--accent-warm);
+  opacity: 0.3;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent-warm) !important;
+}
+
+/* --- About / Why Section --- */
+.about .description h3 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--heading-color);
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.about .description h3:first-child {
+  margin-top: 0;
+}
+
+.about .description p {
+  line-height: 1.8;
+}
+
+.about .image-container img {
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(26, 46, 68, 0.12);
+}
+
+/* --- Adventure / Stats Section --- */
+.stats .section-headline {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.stats .stat-divider {
+  background-color: var(--accent-warm);
+}
+
+.stats .stat-label {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+
+/* --- Services / Boats Section --- */
+.services .service-item .service-icon i {
+  color: var(--accent-warm);
+}
+
+.services .service-item h3 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.services .service-item:hover {
+  border-color: var(--accent-warm);
+}
+
+/* --- Itinerary / Cert Items --- */
+.cert-item i {
+  color: var(--accent-warm);
+}
+
+.cert-item span {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.cert-title {
+  font-family: var(--heading-font);
+}
+
+/* --- Gift a Voyage Section --- */
+.gift-voyage {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a2e44 0%, #253d56 50%, #1a2e44 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.gift-voyage::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(196, 121, 91, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gift-voyage .gift-badge {
+  display: inline-block;
+  background: rgba(196, 121, 91, 0.15);
+  color: var(--accent-warm);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.gift-voyage .gift-badge i {
+  margin-right: 6px;
+}
+
+.gift-voyage h2 {
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.gift-voyage .gift-lead {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.gift-voyage .gift-content p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.gift-voyage .gift-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.gift-voyage .gift-cta-group .btn-primary {
+  background-color: var(--accent-warm) !important;
+  color: #fff !important;
+}
+
+.gift-voyage .gift-cta-group .btn-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gift-voyage .gift-cta-group .btn-link:hover {
+  color: var(--accent-warm);
+}
+
+/* Gift Card Preview */
+.gift-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.gift-card-preview {
+  perspective: 1000px;
+}
+
+.gift-card-inner {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  max-width: 360px;
+  transform: rotateY(-5deg) rotateX(3deg);
+  transition: transform 0.5s ease;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.gift-card-inner:hover {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+
+.gift-card-inner i.bi-compass {
+  font-size: 2.5rem;
+  color: var(--accent-warm);
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.gift-card-inner h4 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.gift-card-inner .gift-card-text {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.gift-card-inner .gift-card-label {
+  display: inline-block;
+  background: var(--accent-warm);
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --- Pricing --- */
+.pricing .price-card {
+  border-radius: 12px;
+  border: 1px solid rgba(26, 46, 68, 0.08);
+  transition: all 0.3s ease;
+}
+
+.pricing .price-card:hover {
+  box-shadow: 0 16px 48px rgba(26, 46, 68, 0.12);
+  transform: translateY(-4px);
+}
+
+.pricing .price-card.featured {
+  border-color: var(--accent-warm);
+}
+
+.pricing .ribbon {
+  background: var(--accent-warm);
+}
+
+.pricing .btn-choose {
+  background-color: var(--accent-warm);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pricing .btn-choose:hover {
+  background-color: var(--accent-warm-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(196, 121, 91, 0.3);
+}
+
+.pricing .feature-list i {
+  color: var(--accent-warm);
+}
+
+/* --- FAQ --- */
+.faq .faq-number {
+  color: var(--accent-warm);
+}
+
+.faq .faq-item.faq-active .faq-header {
+  border-color: var(--accent-warm);
+}
+
+.faq .faq-toggle i {
+  color: var(--accent-warm);
+}
+
+/* --- Contact --- */
+.contact .send-button {
+  background-color: var(--accent-warm);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--default-font);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact .send-button:hover {
+  background-color: var(--accent-warm-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(196, 121, 91, 0.3);
+}
+
+.contact .contact-icon i {
+  color: var(--accent-warm);
+}
+
+.contact .social-link:hover {
+  background-color: var(--accent-warm);
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #f5f1eb;
+}
+
+.footer .footer-tagline {
+  font-family: var(--heading-font);
+  font-style: italic;
+  color: var(--accent-warm);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.footer-newsletter {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.footer-newsletter h4 {
+  font-family: var(--heading-font);
+  color: #fff;
+}
+
+.footer-newsletter input[type="submit"] {
+  background-color: var(--accent-warm);
+  border: none;
+}
+
+.footer-newsletter input[type="submit"]:hover {
+  background-color: var(--accent-warm-light);
+}
+
+.footer h4 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.footer .social-links a:hover {
+  background-color: var(--accent-warm);
+}
+
+.footer .sitename {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+/* --- Scroll Top Button --- */
+.scroll-top {
+  background-color: var(--accent-warm);
+}
+
+.scroll-top:hover {
+  background-color: var(--accent-warm-light);
+}
+
+/* --- Itinerary Page --- */
+.itinerary-page .cert-list .cert-item {
+  margin-top: 1.5rem;
+}
+
+.itinerary-page .cert-list .cert-item:first-child {
+  margin-top: 0;
+}
+
+.itinerary-page .cert-list p {
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .gift-voyage {
+    padding: 60px 0;
+  }
+
+  .gift-card-inner {
+    transform: none;
+    padding: 36px 28px;
+  }
+
+  .gift-voyage .gift-cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
