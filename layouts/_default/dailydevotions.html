@@ -1,0 +1,28 @@
+{{define "main"}}
+<section class="section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>{{ .Title }}</h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <div class="row gy-4">
+      {{ range .Pages }}
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <article class="card h-100">
+          {{ with .Params.image }}
+          <img src="{{ . }}" alt="{{ $.Title }}" class="card-img-top" loading="lazy" />
+          {{ end }}
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+            <p class="card-text">{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="btn-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{end}}

@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>{{ if .IsHome }}{{ site.Title }} — Purposeful Sailing Adventures{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}" />
+  <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ site.Params.keywords }}{{ end }}" />
+  <meta name="author" content="{{ site.Params.author }}" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="{{ .Title }} | {{ site.Title }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.ico" rel="icon" />
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts: Playfair Display (headings) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet" />
+</head>

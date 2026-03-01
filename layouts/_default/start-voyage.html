@@ -1,0 +1,147 @@
+{{define "main"}}
+<section id="start-voyage" class="start-voyage section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Start Your Voyage</h2>
+    <p>Tell us about your dream sailing adventure</p>
+  </div>
+
+  <div class="container contact" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-form-container">
+          <form
+            action="https://formspree.io/f/mykjyjov"
+            method="POST"
+            class="php-email-form contact-form"
+          >
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-input"
+                    id="voyageName"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="voyageName" class="field-label">Full Name *</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    id="voyageEmail"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="voyageEmail" class="field-label">Email Address *</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="tel"
+                    class="form-input"
+                    name="phone"
+                    id="voyagePhone"
+                    placeholder=" "
+                  />
+                  <label for="voyagePhone" class="field-label">Phone Number (Optional)</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="number"
+                    class="form-input"
+                    name="number_of_people"
+                    id="voyagePeople"
+                    min="1"
+                    max="50"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="voyagePeople" class="field-label">Number of People *</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 margintop">
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="date"
+                    class="form-input"
+                    name="start_date"
+                    id="voyageStartDate"
+                    required
+                  />
+                  <label for="voyageStartDate" class="field-label">Start Date *</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <input
+                    type="date"
+                    class="form-input"
+                    name="end_date"
+                    id="voyageEndDate"
+                    required
+                  />
+                  <label for="voyageEndDate" class="field-label">End Date *</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <textarea
+                class="form-input message-input"
+                name="goals"
+                id="voyageGoals"
+                rows="5"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="voyageGoals" class="field-label">Goals of Voyage *</label>
+            </div>
+
+            <div class="form-field">
+              <textarea
+                class="form-input message-input"
+                name="additional_info"
+                id="voyageAdditional"
+                rows="3"
+                placeholder=" "
+              ></textarea>
+              <label for="voyageAdditional" class="field-label">Additional Information (Optional)</label>
+            </div>
+
+            <div class="my-4">
+              <div class="loading">Submitting your request...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Thank you for your submission! Someone from our team will be reaching out to you soon to start planning your voyage.
+              </div>
+            </div>
+
+            <button type="submit" class="send-button">
+              Submit Request
+              <span class="button-arrow">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
