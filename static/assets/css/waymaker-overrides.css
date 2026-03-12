@@ -621,3 +621,16 @@ a.btn-link:hover {
   transform: none !important;
   transition: none !important;
 }
+/* Testimonials - center navigation arrows below cards */
+.testimonials .swiper-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.testimonials .swiper-button-prev,
+.testimonials .swiper-button-next {
+  position: static;
+  margin: 0;
+}
