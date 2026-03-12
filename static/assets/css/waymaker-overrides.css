@@ -634,3 +634,17 @@ a.btn-link:hover {
   position: static;
   margin: 0;
 }
+.testimonials .swiper-navigation {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 16px;
+  margin-top: 30px;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.testimonials .swiper-button-prev,
+.testimonials .swiper-button-next {
+  position: static !important;
+  margin: 0 !important;
+}
